@@ -1,0 +1,41 @@
+{
+  "name": "mcp-local",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Local file system MCP server for repository exploration and analysis",
+  "main": "mcp-local-server.js",
+  "scripts": {
+    "start": "node mcp-local-server.js",
+    "test": "echo \"No tests specified yet\" && exit 0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.1",
+    "glob": "^11.0.3",
+    "uuid": "^11.1.0"
+  },
+  "bin": {
+    "mcp-local": "./mcp-local-server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "local-files",
+    "repository-exploration",
+    "file-analysis",
+    "model-context-protocol",
+    "read-only",
+    "file-system"
+  ],
+  "author": "Alexander Bychinskiy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bermudas/mcp-local.git"
+  },
+  "homepage": "https://github.com/bermudas/mcp-local#readme",
+  "bugs": {
+    "url": "https://github.com/bermudas/mcp-local/issues"
+  }
+}

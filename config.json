@@ -1,0 +1,27 @@
+{
+  "deployment_url": "your_elitea_deployment_url",
+  "auth_token": "your_elitea_token",
+  "timeout": 900,
+  "host": "0.0.0.0",
+  "port": 8000,
+  "servers": {
+    "gatling_mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/opt/mcp-local-server.js"
+      ],
+      "cwd": "/opt",
+      "env": {
+        "CLAUDE_CODE_USE_BEDROCK": "1",
+        "AWS_ACCESS_KEY_ID": "your_aws_access_key_id",
+        "AWS_SECRET_ACCESS_KEY": "your_aws_secret_key",
+        "ANTHROPIC_MODEL": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "AWS_REGION": "us-east-1",
+        "IS_SANDBOX": "1"
+      },
+      "stateful": true
+    }
+  },
+  "project_id": "your_project_id"
+}
