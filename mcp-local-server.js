@@ -2096,10 +2096,10 @@ class LocalMCPServer {
         resultText += `**Prompt:** ${prompt}\n`;
         resultText += `**Working Directory:** ${workingDirectory || process.cwd()}\n\n`;
         if (stdout.trim()) {
-          resultText += `**Output (last 20 lines):**\n\u0060\u0060\u0060\n${getLastLines(stdout, 20)}\n\u0060\u0060\u0060\n`;
+          resultText += `**Output:**\n\u0060\u0060\u0060\n${stdout.trim()}\n\u0060\u0060\u0060\n`;
         }
         if (stderr.trim()) {
-          resultText += `**Warnings/Errors (last 20 lines):**\n\u0060\u0060\u0060\n${getLastLines(stderr, 20)}\n\u0060\u0060\u0060\n`;
+          resultText += `**Warnings/Errors:**\n\u0060\u0060\u0060\n${stderr.trim()}\n\u0060\u0060\u0060\n`;
         }
         if (code === 0) {
           resultText += `✅ **Claude command executed.**`;
