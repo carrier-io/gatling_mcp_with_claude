@@ -28,14 +28,14 @@
     "read-only",
     "file-system"
   ],
-  "author": "Alexander Bychinskiy",
+  "author": "Mykhailo Hunko",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bermudas/mcp-local.git"
+    "url": "https://github.com/carrier-io/gatling_mcp_with_claude.git"
   },
-  "homepage": "https://github.com/bermudas/mcp-local#readme",
+  "homepage": "https://github.com/carrier-io/gatling_mcp_with_claude#readme",
   "bugs": {
-    "url": "https://github.com/bermudas/mcp-local/issues"
+    "url": "https://github.com/carrier-io/gatling_mcp_with_claude/issues"
   }
 }
